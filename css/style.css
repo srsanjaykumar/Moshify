@@ -180,6 +180,10 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--white{
+    fill: #fff;
+}
+
 .icon-container {
 
     width: 64px;
@@ -191,6 +195,16 @@ a {
     align-items: center;
 
 }
+.icon-container--accent{
+    background: var(--color-accent);
+}
+
+
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+
 
 /* BUTTONS  */
 .btn {
@@ -206,7 +220,10 @@ a {
     margin: 1rem 0 ;
 
 }
-
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 5rem;
+}
 .btn--primary {
     background: var(--color-primary);
     color: #fff;
@@ -470,15 +487,82 @@ a {
 }
 
 
+.testimonial{
+    padding: 6rem;
+}
+
+.testimonial__image > img {
+    width: 100%;
+}
+
+.testimonial__image  {
+    position: relative;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+
+.card{
+    margin: 40px;
+}
+
+
+@media screen and (min-width:724px) {
+    .testimonial  .quote ,
+    .testimonial .quote__author{
+        font-size: 2.4rem ;
+    }
+}
+
+
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
 
 
 
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+
+}
 
 
+.callout__content{
+    text-align: center;
+}
 
+@media screen and (min-width:768px) {
+    .callout__content{
+        text-align: left;
+    }
 
+    .callout .btn{
+        justify-self: start;
+        margin:  0 2rem ;
+    
+    }
 
-
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto ;
+    }
+}
 
 
 
