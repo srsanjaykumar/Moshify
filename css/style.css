@@ -34,6 +34,7 @@ h2,
 h3 {
     color: var(--color-heading);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -297,6 +298,7 @@ a {
 .input-group .input{
     border: 0;
     flex-grow: 1;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn{
@@ -610,7 +612,7 @@ a {
 .block{
     --padding-vertical:6rem;
     padding: var(--padding-vertical) 2rem ;
-    border: 2px solid red;
+    border: 3px solid rgb(0, 255, 132);
     text-align: center;
 }
 
@@ -637,7 +639,7 @@ a {
 
 .block--skewed-left{
     padding-bottom: calc(var(--padding-vertical) +4rem);
-    clip-path:polygon(0% 0% , 100% 0% , 100% 90% ,0% 110%);
+    clip-path:polygon(0% 0% , 100% 0% , 100% 80% ,0% 100%);
 }
 
 .container{
@@ -706,6 +708,73 @@ a {
         opacity: 1;
     }
 }
+
+/* HERO  */
+.hero{
+    clip-path:polygon(0% 0% , 100% 0% , 100% 93% ,0% 100%);
+}
+
+.hero__tagline{
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem ;
+}
+
+.hero__image{
+    width: 100% ;
+}
+
+
+
+@media screen and (min-width : 768px) {
+    .hero{
+        padding-top: 0 ;
+    }
+    .hero__content{
+        text-align: left;
+        align-self: center;
+    }
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+/* DOMAIN */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem 0 ;
+}
+
+
+.block-domain__price{
+    display: grid;
+    font-weight: 600;
+    font-size: 2rem;
+    justify-items: center ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .block-domain__price{
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+
+}
+
+
+
+
+
+
 
 
 
